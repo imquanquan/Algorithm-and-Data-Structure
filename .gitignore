@@ -105,3 +105,8 @@ venv.bak/
 
 # idea
 .idea/
+
+# go
+source/go/bin
+source/go/pkg
+source/go/src/test
