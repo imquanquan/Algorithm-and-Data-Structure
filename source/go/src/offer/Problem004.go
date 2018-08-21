@@ -20,7 +20,7 @@ func Pop(queue *MyQueue) (int, error) {
 		queue.Stack2 = queue.Stack2[:len(queue.Stack2) - 1]
 		return val, nil
     }
-	for i := len(queue.Stack1) - 1; i >= 0; i -- {
+	for i := len(queue.Stack1) - 1; i >= 0; i-- {
 		queue.Stack2 = append(queue.Stack2, queue.Stack1[i])
 		queue.Stack1 = queue.Stack1[:len(queue.Stack1) - 1]
 	}
