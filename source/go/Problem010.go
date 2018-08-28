@@ -1,23 +1,28 @@
 package offer
 
-type LinkedList struct {
-	size int
-	head *LinkedListNode
-	tail *LinkedListNode
+import "errors"
+
+type LinkedListNode struct {
+	Value string
+	Next * LinkedListNode
 }
 
-func DeleteNode(list *LinkedList, node *LinkedListNode)  {
-	if list.size == 1 && list.head == node {
-		list = nil
-		return
-	}
-	if list.head == node {
-		node = list.head
-		list.head = node.Next
-		list.size--
-		if list.size == 1 {
-			list.tail = nil
+type LinkedList struct {
+	Size int
+	Head *LinkedListNode
+	Tail *LinkedListNode
+}
+
+func DeleteNode(list *LinkedList, index int) error {
+	if index < 0 || index > list.Size - 1 {
+		return errors.New("please check index")
+	} else {
+		item := list.Head
+		for i := 0; i < index - 1; i++ {
+			item = item.Next
 		}
-		return
+		item.Next = item.Next.Next
+		return nil
 	}
 }
+
