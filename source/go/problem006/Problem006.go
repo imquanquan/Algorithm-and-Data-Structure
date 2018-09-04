@@ -1,4 +1,4 @@
-package offer
+package problem006
 
 func Fibonacci() func() int  {
 	first, second := 0, 1

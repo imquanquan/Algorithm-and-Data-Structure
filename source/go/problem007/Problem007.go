@@ -1,4 +1,4 @@
-package offer
+package problem007
 
 func CountOne(number int) int {
 	count := 0

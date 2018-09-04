@@ -1,4 +1,4 @@
-package offer
+package problem001
 
 type Matrix [][]int
 

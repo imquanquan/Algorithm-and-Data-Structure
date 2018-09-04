@@ -1,4 +1,4 @@
-package offer
+package problem005
 
 import "fmt"
 

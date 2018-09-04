@@ -1,4 +1,4 @@
-package offer
+package problem002
 
 import "strings"
 

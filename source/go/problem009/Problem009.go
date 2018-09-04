@@ -1,4 +1,4 @@
-package offer
+package problem009
 
 import (
 	"math"

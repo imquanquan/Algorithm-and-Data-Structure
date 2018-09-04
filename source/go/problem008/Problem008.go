@@ -1,4 +1,4 @@
-package offer
+package problem008
 
 func InOrderFind(a []int) int {
 	result := a[0]

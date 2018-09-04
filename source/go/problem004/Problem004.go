@@ -1,4 +1,4 @@
-package offer
+package problem004
 
 import "errors"
 

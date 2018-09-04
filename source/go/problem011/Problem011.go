@@ -1,4 +1,4 @@
-package offer
+package problem011
 
 func IsEven(num int) bool {
 	return (num % 2) == 0
